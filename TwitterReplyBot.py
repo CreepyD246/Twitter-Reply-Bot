@@ -3,7 +3,7 @@ import tweepy
 import time
 
 # Initialization code
-auth = tweepy.OAuthHandler("YOUR API KEY", "YOUR API SECRET KEY)
+auth = tweepy.OAuthHandler("YOUR API KEY", "YOUR API SECRET KEY")
 auth.set_access_token("YOUR ACCESS TOKEN", "YOUR SECRET ACCESS TOKEN")
 api = tweepy.API(auth)
 
