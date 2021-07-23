@@ -25,7 +25,7 @@ while True:
         # that the mention tweet contains one of the words in our 'words' list
         # so that we can determine if the tweet might be a question.
         if mention.in_reply_to_status_id is None and mention.author.id != bot_id:
-            if [word in mention.text.lower() for word in words]:
+            if True in [word in mention.text.lower() for word in words]:
                 try:
                     print("Attempting to reply...")
                     api.update_status(message.format(mention.author.screen_name), in_reply_to_status_id=mention.id_str)
