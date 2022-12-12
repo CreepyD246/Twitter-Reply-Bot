@@ -8,7 +8,7 @@ auth.set_access_token("YOUR ACCESS TOKEN", "YOUR SECRET ACCESS TOKEN")
 api = tweepy.API(auth)
 
 # Some important variables which will be used later
-bot_id = int(api.me().id_str)
+bot_id = int(api.verify_credentials().id_str)
 mention_id = 1
 words = ["why", "how", "when", "what", "?"]
 message = "If you have any questions, feel free to send us a DM @{}"
